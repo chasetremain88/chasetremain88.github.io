@@ -1,0 +1,226 @@
+/* ---------- GENERAL ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #181818;
+    background: #ffffff;
+}
+
+main {
+    width: 86%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+nav {
+    width: 86%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin-left: 35px;
+
+    color: #181818;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    opacity: 0.55;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro,
+.section-label {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 72px;
+    margin: 10px 0;
+    letter-spacing: -2px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0 0 25px;
+}
+
+.description {
+    max-width: 620px;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    width: fit-content;
+
+    margin-top: 20px;
+    padding: 14px 24px;
+
+    background: #181818;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+
+/* ---------- SECTIONS ---------- */
+
+section {
+    margin-bottom: 140px;
+}
+
+.section-title {
+    font-size: 42px;
+    margin-top: 8px;
+    margin-bottom: 45px;
+}
+
+
+/* ---------- PROJECTS ---------- */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-image {
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eeeeee;
+    color: #888888;
+}
+
+.project-content {
+    padding: 30px;
+}
+
+.project-number {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.project-content h3 {
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.project-content p {
+    line-height: 1.6;
+}
+
+.tags {
+    margin-top: 25px;
+}
+
+.tags span {
+    display: inline-block;
+
+    padding: 7px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    background: #eeeeee;
+
+    border-radius: 4px;
+
+    font-size: 12px;
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about-text {
+    max-width: 750px;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    width: 86%;
+    max-width: 1200px;
+
+    margin: auto;
+    padding: 30px 0;
+
+    border-top: 1px solid #dddddd;
+
+    font-size: 13px;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links a {
+        margin-left: 15px;
+    }
+
+}
