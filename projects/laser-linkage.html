@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Laser Positioning Linkage | Chase Tremain
+    </title>
+
+    <meta name="description"
+          content="Mechanical linkage design project by Chase Tremain.">
+
+    <link rel="stylesheet"
+          href="../style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <nav>
+
+        <a class="logo"
+           href="../index.html">
+            CHASE TREMAIN
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="../index.html#projects">
+                Projects
+            </a>
+
+            <a href="../index.html#about">
+                About
+            </a>
+
+            <a href="../documents/Chase_Tremain_Resume.pdf"
+               target="_blank">
+                Resume
+            </a>
+
+            <a href="../index.html#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="project-page-hero">
+
+    <p class="eyebrow">
+        MECHANICAL DESIGN · LINKAGES · PROTOTYPING
+    </p>
+
+    <h1>
+        Laser Positioning<br>
+        Linkage
+    </h1>
+
+    <p class="project-page-intro">
+
+        Design and development of a mechanical linkage system
+        used to control the position and motion of a laser.
+
+    </p>
+
+
+    <div class="project-meta">
+
+        <div>
+            <span>TYPE</span>
+            <p>Academic Project</p>
+        </div>
+
+        <div>
+            <span>TOOLS</span>
+            <p>CAD · Analysis · Prototyping</p>
+        </div>
+
+        <div>
+            <span>FOCUS</span>
+            <p>Linkage Design · Kinematics · Mechanical Design</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= GALLERY ================= -->
+
+<section class="project-gallery">
+
+    <div class="gallery-frame">
+
+        <button class="gallery-button gallery-prev"
+                aria-label="Previous image">
+            ‹
+        </button>
+
+
+        <img class="gallery-image"
+             src="../Images/LinkageNoMotor.png"
+             alt="Laser positioning linkage">
+
+
+        <button class="gallery-button gallery-next"
+                aria-label="Next image">
+            ›
+        </button>
+
+    </div>
+
+
+    <div class="gallery-info">
+
+        <p class="gallery-title">
+            Linkage Assembly
+        </p>
+
+        <p class="gallery-counter">
+            1 / 4
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= 01 OVERVIEW ================= -->
+
+<section class="project-content-section">
+
+    <div class="project-section-number">
+        01
+    </div>
+
+
+    <div class="project-section-content">
+
+        <p class="eyebrow">
+            PROJECT OVERVIEW
+        </p>
+
+        <p>
+            The objective of this academic project was to design and build
+            a mechanical linkage capable of controlling the position and
+            motion of a laser.
+        </p>
+
+        <p>
+            The project involved translating the desired laser motion
+            into a mechanical system that could be modeled, manufactured,
+            assembled, and experimentally tested.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= 02 LINKAGE DESIGN ================= -->
+
+<section class="project-content-section">
+
+    <div class="project-section-number">
+        02
+    </div>
+
+
+    <div class="project-section-content">
+
+        <p class="eyebrow">
+            LINKAGE DESIGN
+        </p>
+
+        <p>
+            Link geometry and component dimensions were developed around
+            the required motion of the laser. The relationship between
+            linkage input and laser position was considered throughout
+            the mechanical design process.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= 03 PROTOTYPE ================= -->
+
+<section class="project-content-section">
+
+    <div class="project-section-number">
+        03
+    </div>
+
+
+    <div class="project-section-content">
+
+        <p class="eyebrow">
+            PROTOTYPE & TESTING
+        </p>
+
+        <p>
+            The final mechanism was assembled and tested to evaluate
+            its physical motion and compare the completed system with
+            the intended linkage behavior.
+        </p>
+
+
+        <video class="project-video"
+               controls
+               muted
+               loop>
+
+            <source src="../Videos/LinkageMoving.MOV"
+                    type="video/quicktime">
+
+            Your browser does not support video playback.
+
+        </video>
+
+    </div>
+
+</section>
+
+
+
+<section class="project-navigation">
+
+    <a href="../index.html#projects">
+        ← Back to Projects
+    </a>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>© 2026 Chase Tremain</p>
+
+    <p>Mechanical Engineering Portfolio</p>
+
+</footer>
+
+
+
+<!-- ================= GALLERY SCRIPT ================= -->
+
+<script>
+
+const galleryImages = [
+
+    {
+        src: "../Images/LinkageNoMotor.png",
+        title: "Linkage Assembly",
+        alt: "Laser positioning linkage"
+    },
+
+    {
+        src: "../Images/LinkageMotor.png",
+        title: "Motorized Linkage",
+        alt: "Laser positioning linkage with motor"
+    },
+
+    {
+        src: "../Images/JointStack.png",
+        title: "Joint Assembly",
+        alt: "Laser positioning linkage joint assembly"
+    },
+
+    {
+        src: "../Images/CircuitDiagram.png",
+        title: "Control Circuit",
+        alt: "Laser positioning linkage circuit diagram"
+    }
+
+];
+
+
+let currentImage = 0;
+
+
+const image =
+    document.querySelector(".gallery-image");
+
+const title =
+    document.querySelector(".gallery-title");
+
+const counter =
+    document.querySelector(".gallery-counter");
+
+
+function updateGallery() {
+
+    image.src =
+        galleryImages[currentImage].src;
+
+    image.alt =
+        galleryImages[currentImage].alt;
+
+    title.textContent =
+        galleryImages[currentImage].title;
+
+    counter.textContent =
+        (currentImage + 1) + " / " + galleryImages.length;
+
+}
+
+
+document.querySelector(".gallery-next")
+.addEventListener("click", function() {
+
+    currentImage =
+        (currentImage + 1)
+        % galleryImages.length;
+
+    updateGallery();
+
+});
+
+
+document.querySelector(".gallery-prev")
+.addEventListener("click", function() {
+
+    currentImage =
+        (currentImage - 1 + galleryImages.length)
+        % galleryImages.length;
+
+    updateGallery();
+
+});
+
+</script>
+
+
+</body>
+
+</html>
